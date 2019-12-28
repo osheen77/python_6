@@ -71,8 +71,8 @@ for i in aliens[0:13]:
     print(i)
 print("...")
 
-print("lebgth of th estring is " + len(str(aliens)))
-####getting answer for the string length 1602 rather than 30, why ?#######
+print("lebgth of th estring is " + str(len(aliens)))
+
 
 print("6.7")
 
@@ -95,11 +95,50 @@ for i  in pets:
     print(i)
 print("...")
 
-print("6.9")
+print("/n6.9")
 
-places={'japan':'popular for the discipline',
-        'africa':'famous for parties',
-        'india':'famous fo rthe culture'}
+places={'japan':'ravi',
+        'africa':'raj',
+        'india':'rohit'}
 
-for i ,v in places:
-    
+for i ,v in places.items():
+    print(v +"'s favorite place is " + i)
+
+print("\n6.10")  
+
+fav_number= {'ravi':[ 45,20,33] , 
+             'pooja':[77,67,98],
+             'riki':[9,99,100], 
+             'kuku':[87,88,45]}
+for names,numbers in fav_number.items():
+    print("\n" + names + "'s favorite numbers are:")
+    for number in numbers:
+        print("\t" + str(number))
+
+print("/n6.11")
+
+cities= {
+        'chandigarh':{
+        'info': 'This is the city beautiful',
+        'population' : '6001000',
+        'fact':'most planned'
+        },
+        'delhi':{
+         'info':'is the capiital of India',
+         'population':'1000000',
+         'fact':'really unsafe'
+            },
+        'mumbai':{
+         'info':'is the movie capital',
+         'population':'40000000',
+         'fact':'very expensive to live in'}
+        }
+for i,j in cities.items():
+    print("\nThe name of city is " + i)
+    information= j['info']
+    population=j['population']
+    fact=j['fact']
+    print("\t" + information +"\n\tHas a population of "+population
+          + "\n\tThe fact is that it is " +fact )
+
+
